@@ -1,6 +1,5 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer')
-// const { writeFile } = require('fs').promises
 const { writeFile } = require('fs').promises;
 // const generateMarkdown = require('./utils/generateMarkdown');
   
