@@ -1,5 +1,12 @@
 # nodeChallange
 
+## Table of contents
+* Assignment
+* Usage
+* User Story
+* Collaborators
+* Links
+
 ## Assignment
 Create with Inquirer, the ability to quickly and easily create a README file by using a command-line application.
 
@@ -21,7 +28,7 @@ SO THAT I can quickly create a professional README for a new project
 ## Collaborators
 All of my wonderfull TAs and classmates!!
 
-## links
+## Links
 github.com/hashketchum208/nodeChallange
 
 
