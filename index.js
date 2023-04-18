@@ -37,13 +37,33 @@ const promptUser = () => {
       message: "Add a license",
       choices: ['MIT', 'Apache', 'Idaho state drivers licence']
     },
-    ])
+    {
+      type: 'input',
+      name: 'contribution',
+      message: 'Include any guidelines explaining how other developers can contribute to your application:'
+    },
+    {
+      type: 'input',
+      name: 'test',
+      message: 'Provide examples of how to run any tests for your application:'
+  },
+  {
+      type: 'input',
+      name: 'username',
+      message: 'What is your GitHub username?',
+  },
+  {
+      type: 'input',
+      name: 'email',
+      message: 'What is your e-mail address?',
+  }
+]);
+    
 };
 //  TODO: Create a function to write README file
 
-const generateREADMEmd = ({ title, description, installation, usage, credits, license }) =>
-   `md 
-
+const generateREADMEmd = ({ title, description, installation, usage, credits, license, contribution, test, username, email }) =>
+   `
   # ${title},
 
   ## Description
@@ -60,6 +80,18 @@ const generateREADMEmd = ({ title, description, installation, usage, credits, li
 
   ## License
   ${license},
+
+  ## Contribution
+  ${contribution},
+
+  ## test
+  ${test},
+
+  ## username
+  ${username},
+
+  ## email
+  ${email},
   `;
 
 
